@@ -1,0 +1,12 @@
+service: 'app.services.summarization_service:svc'
+include:
+  - '*.py'
+python:
+  packages:
+    - torch
+    - transformers
+    - fastapi
+    - uvicorn
+    - prometheus-client
+models:
+  - summarization:latest
